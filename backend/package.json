@@ -1,0 +1,15 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "this a note app for listing work to do",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Biswajit Mandal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-modules": "^1.0.1"
+  }
+}
