@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-// connectToDB();
+connectToDB();
 
 const port = process.env.APP_PORT;
   
