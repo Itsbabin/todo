@@ -1,5 +1,5 @@
 import { Router } from "express";
-
+import creatData from "../routes/creatData.route";
 
   const datarouter = Router();
 
