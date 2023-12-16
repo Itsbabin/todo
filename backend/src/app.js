@@ -18,8 +18,10 @@ app.use(express.urlencoded({
 }))
 
 import useUser from './utils/useUser.js'
+import useData from './utils/useData.js'
 
 app.use('/user',useUser);
+app.use('/data',useData);
 
 
 
