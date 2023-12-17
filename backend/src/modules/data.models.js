@@ -14,4 +14,6 @@ const dataSchema = new mongoose.Schema({
 },
 {timestamps : true});
 
-export default Data = mongoose.model("Data",dataSchema);
+const Data = mongoose.model("Data",dataSchema);
+
+export default Data;

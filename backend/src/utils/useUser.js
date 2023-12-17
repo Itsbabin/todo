@@ -5,8 +5,8 @@ import login from "../routes/login.route.js";
 const router = Router();
 
 
-    router.route('/singin').post(singin);
-    router.route('/login').get(login);
+router.route('/singin').post(singin);
+router.route('/login').get(login);
 
 
 

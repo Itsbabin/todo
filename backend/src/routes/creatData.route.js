@@ -1,5 +1,5 @@
-import Data from '../modules/data.models'
-import ApiResponse from '../utils/ApiResponse';
+import Data from '../modules/data.models.js'
+import ApiResponse from '../utils/ApiResponse.js';
 
 
 const creatData = async (req , res) => {
@@ -13,7 +13,7 @@ const creatData = async (req , res) => {
         res.status(200).json({response});
     })
     .catch((err) => {
-        const response = new ApiResponse(false , "user creation faild" ,null)
+        const response = new ApiResponse(false , "user creation faild" ,err)
         res.status(400).json({response});
     })
 }
