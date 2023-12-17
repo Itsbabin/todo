@@ -4,7 +4,9 @@ import ApiResponse from '../utils/ApiResponse.js';
 
 const creatData = async (req , res) => {
     const {title , summary} = req.body;
-    await Data.create({
+   try {
+    
+   await Data.create({
         title : title,
         summary : summary
     })
@@ -15,7 +17,10 @@ const creatData = async (req , res) => {
     .catch((err) => {
         const response = new ApiResponse(false , "user creation faild" ,err)
         res.status(400).json({response});
-    })
+    })}catch (error) {
+        const response = new ApiResponse(false , "user creation faild" ,error)
+        res.status(400).json({response});
+    }
 }
 
 export default creatData;
