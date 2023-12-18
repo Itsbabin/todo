@@ -1,4 +1,5 @@
 import User from "../modules/user.models.js";
+import ApiResponse from "../utils/ApiResponse.js";
 
 const singin = async (req , res) => {
     const {name , email , password} = req.body;
@@ -8,10 +9,12 @@ const singin = async (req , res) => {
         password : password
     })
     .then((data) =>{
-        res.status(200).json({data : data});
+       const response = new ApiResponse(true,"data fetched",data)
+       res.status(200).json({response});
     })
     .catch((err) => {
-        res.status(400).json({err : err});
+       const response = new ApiResponse(false,"an error ocured",err)
+       res.status(200).json({response});
     })
 
 }
