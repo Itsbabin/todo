@@ -1,0 +1,17 @@
+nav{
+    background-color: rgb(54, 54, 60);
+    width: 98.8vw;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: sticky;
+    top: 0rem;
+}
+.logo , .options{
+    background-color: aliceblue;
+    height: 7vh;
+    width: 10vw;
+    margin-inline: 2rem;
+}
